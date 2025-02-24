@@ -1,50 +1,20 @@
-# React + TypeScript + Vite
+##### React Typescript UseQuery Demonstration Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+##### main page demonstration
+- product titles as links
+- products fetched from fakestoreAPI using axios
+- useQuery utilized to get the data from the api
+  
+![mainPage-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/732c5a1e-0e54-42f7-be93-051f1e48b3d0)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Category page demonstration
+- select a category and only products from that are displayed
+- clicking the products will open them
+- category dropDown items also taken from the fakestoreapi
 
-## Expanding the ESLint configuration
+![categoryPage-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b13a75ff-79b7-4408-a124-00df35985f16)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- since the dropdown wasn't visible in the video capture
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+ ![image](https://github.com/user-attachments/assets/b5d39756-a198-4081-8d53-d8832797dc6c)
